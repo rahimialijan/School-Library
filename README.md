@@ -24,9 +24,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Enumerable] <a name="about-project"></a>
+# 📖 [School Library] <a name="about-project"></a>
 
-> **[Enumerable]** Throughout the project, the team learned how to utilize a module within a class. We designed a class called MyList and incorporated a module named MyEnumerable, which implemented a limited set of functionalities from Enumerable.
+> **[School-Library]** application will record the books available in the library and track their borrowers. It will allow new students or teachers to be added, new books to be added, and records of borrowed books and corresponding borrowing dates to be saved. A beautiful and well-organized system will be built to accomplish the task efficiently.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -57,9 +57,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Creating module]**
-- **[Creating class]**
-- **[Including module to class]**
+- **[Person class with instance vars, constructor, getters, setters, and methods]**
+- **[Student class inheriting from Person with extended constructor and play_hooky method]**
+- **[Teacher class inheriting from Person with extended constructor and overridden can_use_services method]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,7 +85,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git git@github.com:rahimialijan/Enumerable.git
+  git clone git@github.com:rahimialijan/School-Library.git
 ```
 
 ### Install
@@ -94,7 +94,7 @@ Install this project with:
 
 ```sh
   cd my-folder
-  git clone https://github.com/rahimialijan/Enumerable.git
+  git clone https://github.com/rahimialijan/School-Library.git
 ```
 
 ### Usage
@@ -103,7 +103,7 @@ To run the project, execute the following command:
 
 ```sh
   cd my-folder
-  git clone https://github.com/rahimialijan/Enumerable.git
+  git clone https://github.com/rahimialijan/School-Library.git
 ```
 
 ### Run tests
@@ -134,20 +134,16 @@ You can deploy this project using:
 - Twitter: [@AlijanRahimi10](https://twitter.com/AlijanRahimi10)
 - LinkedIn: [Alijan-Rahimi](https://www.linkedin.com/in/alijan-rahimi-18389ab3)
 
-👤 **MesakDuduCoder**
-
-- GitHub: [@githubhandle](https://github.com/MesakDuduCoder)
-- Twitter: [@twitterhandle](https://twitter.com/mesak_10)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mesak-lalrindika/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Adding more methods to the module]**
-- [ ] **[Creating new modules]**
+- [ ] **[Usin the 'Decorator' design pattern]**
+- [ ] **[Sitting up associations]**
+- [ ] **[Adding basic UI]**
+- [ ] **[Preserving data]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +153,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/rahimialijan/Enumerable/issues).
+Feel free to check the [issues page](https://github.com/rahimialijan/School-Library/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
