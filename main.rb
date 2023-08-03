@@ -18,42 +18,6 @@ def main_menu
   gets.chomp.to_i
 end
 
-def create_person(app)
-  print 'Enter name: '
-  name = gets.chomp
-  print 'Enter age: '
-  age = gets.chomp.to_i
-  print 'Enter person type (teacher or student): '
-  type = gets.chomp.downcase
-  if type == 'teacher'
-    print 'Enter specialization: '
-    specialization = gets.chomp
-    app.create_person(name, age, type, specialization)
-  elsif type == 'student'
-    app.create_person(name, age, type)
-  else
-    puts 'Invalid person type.'
-  end
-end
-
-def create_book(app)
-  print 'Enter book title: '
-  title = gets.chomp
-  print 'Enter book author: '
-  author = gets.chomp
-  app.create_book(title, author)
-end
-
-def create_rental(app)
-  app.create_rental
-end
-
-def list_rentals(app)
-  print 'Enter person ID: '
-  person_id = gets.chomp.to_i
-  app.list_rentals_for_person(person_id)
-end
-
 # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength
 def main
   app = App.new
