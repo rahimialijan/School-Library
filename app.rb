@@ -20,13 +20,17 @@ class App
 
   def list_books
     puts 'List of Books:'
-    @books.each { |book| puts "Title: #{book.title}, Author: #{book.author}" }
+    @books.each do |book|
+      puts "Title: #{book.title}, Author: #{book.author}"
+    end
     puts
   end
 
   def list_people
     puts 'List of People:'
-    @people.each { |person| puts "ID: #{person.id}, Name: #{person.name}, Age: #{person.age}" }
+    @people.each do |person|
+      puts "ID: #{person.id}, Name: #{person.name}, Age: #{person.age}"
+    end
     puts
   end
 
