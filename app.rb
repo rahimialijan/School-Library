@@ -31,7 +31,7 @@ class App
   end
 
   def create_person(name, age, type, specialization = nil)
-    person = type == 'teacher' ? Teacher.new(specialization, name, age) : Student.new(name, age)
+    person = type == 'teacher' ? Teacher.new(specialization, name, age) : Student.new(name: name, age: age)
     @people << person
     puts "Person with ID #{person.id} was created."
   end
@@ -70,7 +70,7 @@ class App
       puts 'Person not found.'
     else
       puts "Rentals for #{person.name}:"
-      person.rentals.each do |rental|
+      person.rental.each do |rental|
         puts "Date: #{rental.date}, Book: #{rental.book.title}, Author: #{rental.book.author}"
       end
       puts
