@@ -1,7 +1,9 @@
+require_relative 'classroom'
+require_relative 'book'
 require_relative 'nameable'
 
 class Person < Nameable
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :parent_permission, :rental
   attr_reader :id
 
   def initialize(name = 'Unknown', age = 0, parent_permission: true)
@@ -10,6 +12,12 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rental = []
+  end
+
+  def add_rental(rental)
+    @rental.push(rental)
+    rental.person = self
   end
 
   def random_id
