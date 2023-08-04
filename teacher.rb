@@ -1,12 +1,10 @@
-require 'pry'
 require_relative 'person'
 
 class Teacher < Person
   attr_accessor :specialization
 
   def initialize(specialization, name = 'Unknown', age = 0, parent_permission: true)
-    binding.pry
-    super(name, age:age, parent_permission: parent_permission)
+    super(name, age, parent_permission: parent_permission)
     @specialization = specialization
   end
 
