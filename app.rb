@@ -1,5 +1,6 @@
-# app.rb
 
+# app.rb
+require 'pry'
 require_relative 'classroom'
 require_relative 'book'
 require_relative 'nameable'
